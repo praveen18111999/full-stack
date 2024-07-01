@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<input type="text" id="op">
+<p id ="ans"></p>
+
+<script>
+
+
+let x=Number(document.getElementById("num1").value);
+let y=Number(document.getElementById("num2").value);
+let operator=document.getElementById("op").value;
+switch(+){
+case '+':
+let add=num1+num2;
+document.getElementById("ans").innerHTML=add;
+break;
+case '-':
+let sub=num1-num2;
+document.getElementById("ans").innerHTML=sub;
+break;
+case '*':
+let mul=num1*num2;
+document.getElementById("ans").innerHTML=mul;
+break;
+case '/':
+let div=num1/num2;
+document.getElementById("ans").innerHTML=div;
+break;
+default:
+document.getElementById("ans").innerHTML="not a valid operator";
+break;
+}
+
+</script>
+</body>
+</html>
+

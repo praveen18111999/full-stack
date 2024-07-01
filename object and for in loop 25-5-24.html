@@ -1,0 +1,36 @@
+const car={carname:"Mecedes",car_color:"White",model:"class4"};
+for (let x in car){
+  console.log(x+ ":"+car[x]);
+}
+
+const fruits={fruitname:"mango",fruit_color:"yellow",number_of_fruits:50};
+for (let y in fruits){
+  console.log(y+ ":"+fruits[y]);
+}
+
+
+
+function printmiddle(str){
+  
+  let len=str.length;
+  
+  let middle=parseInt(len/2,10);
+  
+  console.log(str[middle]);
+}
+
+
+let str="hello";
+
+printmiddle(str);
+
+
+
+let a=10;
+let x=--a+(a++);
+console.log(x);
+
+let b=10;
+let z=--b+(b++);
+console.log(z);
+

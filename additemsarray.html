@@ -1,0 +1,20 @@
+<html>
+<head>
+<input type="text" id="val">
+<p id="ans"></p>
+<button type="button" onclick="display()">Display</button>
+<button type="button" onclick="add()">Add</button>
+  <script>
+let arr=[];
+
+function add(){
+arr.push(document.getElementById("val").value);
+}
+
+function display(){
+document.getElementById("ans").innerHTML=arr;
+}
+
+  </script>
+</head>
+</html>

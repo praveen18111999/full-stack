@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h4>ODD OR EVEN</h4>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+const numbers = [16, 4, 8, 16, 26,3,6,9,11,15];
+const divby2 = numbers.filter(myFunction);
+
+document.getElementById("demo").innerHTML = "the numbers are even"+divby2;
+
+function myFunction(value) {
+  return value %2==0;
+}
+</script>
+
+
+<script>
+const number = [16, 4, 8, 16, 26,34,30,11,9,7];
+const odd = numbers.filter(myFunction1);
+
+document.getElementById("demo1").innerHTML = "the numbers are odd" + odd;
+document.getElementById("demo2").innerHTML="the numbers are" +numbers;
+function myFunction1(value) {
+  return value %2!=0;
+}
+</script>
+
+</body>
+</html>

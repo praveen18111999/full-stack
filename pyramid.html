@@ -1,0 +1,33 @@
+<html>
+<head>
+<p id="demo"></p>
+<script>
+let n = 5;
+let string = "";
+
+// External loop
+for(let i=1; i<=n; i++) {
+
+    // Printing spaces
+
+
+    for(let j=1; j<=n-i; j++) {
+        string += " ";
+    }
+
+    // Printing stars
+
+
+    for(let k=0; k<2*i-1; k++) {
+        string += "*";
+    }
+    
+    // New line after each row
+
+
+    string += "\n";
+}
+console.log(string);
+</script>
+</head>
+</html>

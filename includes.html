@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<p id="ans"></p>
+<input type="text" id="demo">
+<button type="button" onclick="incl()">answer</button>
+<script>
+function incl(){
+let x=document.getElementById("demo").value;
+let y=x.includes("jasmine");
+document.getElementById("ans").innerHTML=y;
+}
+</script>
+</body>
+</html>

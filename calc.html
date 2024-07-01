@@ -1,0 +1,45 @@
+<html>
+<head>
+<input type="number" id="demo1" >
+<input type="number" id="demo2">
+
+<script>
+
+function add(){
+let x=Number(document.getElementById("demo1").value);
+let y=Number(document.getElementById("demo2").value);
+let z=x+y;
+document.getElementById("answer").innerHTML=z;
+}
+
+function sub(){
+let x=Number(document.getElementById("demo1").value);
+let y=Number(document.getElementById("demo2").value);
+let z=x-y;
+document.getElementById("answer").innerHTML=z;}
+
+function multiply(){
+let x=Number(document.getElementById("demo1").value);
+let y=Number(document.getElementById("demo2").value);
+let z=x*y;
+document.getElementById("answer").innerHTML=z;}
+
+function div(){
+let x=Number(document.getElementById("demo1").value);
+let y=Number(document.getElementById("demo2").value);
+let z=x/y;
+document.getElementById("answer").innerHTML=z;}
+let y=Math.PI;
+console.log(y);
+
+</script>
+ </head>
+<body>
+<p class id="answer"></p>
+
+<button type="button" onclick="add()">ADD</button>
+<button type="button" onclick="sub()">SUB</button>
+<button type="button" onclick="multiply()">MULTIPLY</button>
+<button type="button" onclick="div()">DIVISION</button>
+</body>
+</html>

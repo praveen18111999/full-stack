@@ -1,0 +1,23 @@
+<html>
+<head>
+  <script>
+const person={
+  fullname:function(city,country){
+    return this.firstname +" " +this.lastname+"," +city+" ,"+country;
+    
+}
+  
+}
+ const person1={
+   firstname:"Praveen",
+   lastname:"raj"
+ }
+ 
+ const person2={
+   firstname:"rocky",
+   lastname:"Balboma"
+ }
+ console.log(person.fullname.call(person1,"tsi","ind"))
+   </script>
+</head>
+</html>

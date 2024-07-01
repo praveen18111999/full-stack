@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd or Even Checker</title>
+</head>
+<body>
+<p id="res"></p>
+<input type="number" id="num">
+<button type="button" onclick="oddoreven()">Click to get the answer</button>
+<script>
+function oddoreven(){
+    try {
+        let x = document.getElementById("num").value;
+        if (x === "") {
+            throw "cannot be empty";
+        }
+        x = Number(x);
+        if (x % 2 === 0) {
+            document.getElementById("res").innerHTML = x + " the number is even";
+        } else {
+            document.getElementById("res").innerHTML = x + " the number is odd";
+        }
+    } catch (error) {
+        document.getElementById("res").innerHTML = error;
+    }
+}
+</script>
+</body>
+</html>
+

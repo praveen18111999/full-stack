@@ -1,0 +1,33 @@
+<html>
+<head>
+  <p id="demo"></p>
+  <input type="text" id="demo1">
+  <button type="button" onclick="isPalindrome()">click</button>
+  <script>
+    function isPalindrome() {
+  
+
+        let str = document.getElementById("demo1").value;
+        let rev = "";
+    try {
+        if (str === "") {
+          throw "Cannot be empty";
+        }
+
+        for (let i = str.length - 1; i >= 0; i--) {
+          rev += str[i];
+        }
+
+        if (rev === str) {
+          document.getElementById("demo").innerHTML = "The given word is a palindrome: " + rev;
+        } else {
+          document.getElementById("demo").innerHTML = "The given word is not a palindrome.";
+        }
+      } catch (error) {
+      
+        alert(error); 
+      }
+    }
+  </script>
+</head>
+</html>

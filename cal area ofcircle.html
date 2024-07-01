@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+<input type="number" id="num">
+<p id="answer"></p>
+
+<button type="button" onclick="area()">answer</button>
+
+<script>
+function area(){
+let radius=Number(document.getElementById("num").value);
+let area=Math.PI*radius*radius;
+document.getElementById("answer").innerHTML=area;
+}
+
+
+
+
+
+function circumference(){
+let radius1=Number(document.getElementById("num1").value);
+let circum=2*Math.PI*radius1;
+document.getElementById("ans1").innerHTML=circum;
+}
+
+
+</script>
+
+<input type="number" id="num1">
+<p id="ans1"></p>
+
+<button type="button" onclick="circumference()">circum</button>
+
+</body>
+</html>
+

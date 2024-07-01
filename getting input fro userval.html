@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<p id="ans"></p>
+<input type="number" id="demo">
+<input type="number" id="demo1">
+<button type="button" onclick="op()">click</button>
+<script>
+let x
+let y
+function op(){
+x=Number(document.getElementById("demo").value);
+ y=Number(document.getElementById("demo1").value);
+let z=x+y;
+document.getElementById("ans").innerHTML=z;
+}
+
+
+</script>
+</body>
+</html>

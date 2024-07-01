@@ -1,0 +1,44 @@
+<html>
+<head>
+
+</head>
+<body>
+<input type="number" id="no1">
+<p id="ans"></p>
+
+<button type="button" onclick="bussfizz()">Click to get the answer</button>
+<script>
+function bussfizz(){
+try{
+let x=Number(document.getElementById("no1").value);
+if(x=="")
+throw "cannot be empty value"
+
+if( x%3==0 && x%5==0){
+document.getElementById("ans").innerHTML= x+" " +" the number is fizz buzz";
+} 
+
+else if(x%3==0){
+document.getElementById("ans").innerHTML= x +" " +"the number is buzz";
+}
+
+else if(x%5==0){
+document.getElementById("ans").innerHTML= x + " " +"the number is fizz";
+}
+
+
+else{document.getElementById("ans").innerHTML= x +" " +"the number is not divisible by 3 0r 5";
+}
+
+}
+
+catch(error){
+console.log(error);
+}
+document.getElementById("ans").innerHTML=bussfizz();
+
+}
+
+</script>
+</body>
+</html>
